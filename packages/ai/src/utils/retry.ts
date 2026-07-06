@@ -78,6 +78,9 @@ const RETRYABLE_PROVIDER_ERROR_PATTERN = buildProviderErrorPattern([
 	"you can retry your request",
 	"try your request again",
 	"please retry your request",
+
+	// NVIDIA NIM (and maybe gRPC-based providers) can return this on worker/scheduler overload.
+	"ResourceExhausted",
 ]);
 
 /**
